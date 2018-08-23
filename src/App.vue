@@ -1,28 +1,31 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <section class="section">
+      <div class="container">
+        <h2><b>Tor-Sad</b></h2>
+        <tag-navbar />
+        <b>Vue.js Application</b>
+        <router-view />
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import 'bulma/css/bulma.min.css'
+import Navbar from './components/Navbar.vue'
 
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
+  components:{
+    'tag-navbar':Navbar
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+
+
+
+
+
+
+

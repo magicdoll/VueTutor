@@ -1,0 +1,137 @@
+administrator
+@dm1n51lk
+
+192.168.0.126 old
+192.168.101.74 new
+255.255.252.0 old 
+255.255.254.0 new
+192.168.0.39 old 
+192.168.100.1 new
+
+https://gist.github.com/tutor4dev/e28e8e0feb94eb98fb0fc035b9f1b5b7
+
+node --version //เช็ค Version 
+npm --version //เช็ค version
+npm -g list --depth=0 //เช็ค npm golbal package
+
+วิธีเพิ่ม path
+คลิกขวา mycomputer > Properties > Advanced system setting > Environment..
+New.. > ตั้งชื่อ path และลง path ที่เอามาจาก %appdata% >> npm
+
+visual studio code 
+them color : Ctrl + Shift + P
+
+table>(tr>td*5)*2
+div+div // สร้าง 2 ตัว
+div>div //ลูก
+
+
+ติดตั้ง server ไว้ในตัวมันเอง
+yarn add live-server
+
+สร้าง Project 
+vue ui
+ให้กด break Ctrl + C เลือก n
+เปิด vs code หลังจาก  สร้าง Project 
+cd ไปโปรเจค งาน และพิมพ์ว่า yarn serve
+
+เปิด ดู package.json
+type package.json
+
+
+css 
+yarn add bulma
+
+clear ComEmu : cls
+
+router
+yarn add vue-router
+
+yarn add vee-validate
+
+
+ดู folder ใน folder dir
+
+start json-server
+json-server mywind.json
+
+?age=32
+?_limit=10
+?_limit=10&_page=2
+?q= <<full search
+
+install ajax
+yarn add axios
+
+font : fira code
+
+
+libary เพิ่ม
+yarn add lodash << เป็การหน่วงเวลา ในการเกิด function
+
+vuex แชร์ข้อมูล component
+
+npm -g install yarn << update version
+
+mockaroo.com << เว็บสร้าง json
+
+
+$store.commit('...') >> ใช้เรียก mutation
+$store.dispatch('...') >> ใช้เรียก action
+
+
+
+ลง mariaDB
+โหลด ไฟล์ tutor4dev.sql
+mysql --version 
+mysql -u root -p < tutor4dev.sql เรียกรันไฟล์ SQL
+mysql -u root -p เช็คดูว่ามีไฟล์มั้ย
+show databases;
+- use tutor4dev; // เลือกเข้า Database
+exit
+
+เปิดเข้า folder Program 
+- yarn add express
+- node src index.js
+
+const express = require('express')
+const app = express()
+
+app.get('/', (reg, res) => {
+  res.json({})
+})
+
+app.listen(3000) // ให้บริการที่ port 3000
+
+- yarn serve
+
+ลง nodemon
+- npm -g install nodemon
+- ,"scripts":{
+    "serve": "nodemon src"
+  }
+- ออก ctrl+c > y แล้วก็ yarn serve
+
+เชื่อต่อกับ ฐานข้อมูล จะต้องลง driver 
+- yarn add mysql2 // mysql
+- yarn add tedious // sqlserver
+- yarn add sequelize // ลงทั้งสอง
+
+const Sequelize = require('sequelize') // อ้างถึง libary 
+const sequelize = require('mysql://root@127.0.0.1/tutor4dev') // mysql://root:password@127.0.0.1/tutor4dev
+
+// express
+-yarn add bcryptjs //เอาไว้เข้ารหัสแบบ encode
+-yarn add jsonwebtoken
+
+/********/
+GET /customers -> index
+POST /customers -> insert
+
+GET /customers/:id -> show
+PUT /customers/:id -> update
+DELETE /customers/:id -> delete
+
+GET /customers/:id/order
+
+
